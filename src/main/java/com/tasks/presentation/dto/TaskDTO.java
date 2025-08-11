@@ -21,7 +21,7 @@ public class TaskDTO {
     @Size(max = 255)
     private String description;
     @NotNull(message = "Completed Invalid")
-    private Boolean completed;
+    private Boolean completed = false;
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
     private LocalDateTime createDate = LocalDateTime.now();
 }
